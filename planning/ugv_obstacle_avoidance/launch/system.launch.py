@@ -18,7 +18,9 @@ def generate_launch_description():
             name='avoider_node',
             output='screen',
             parameters=[
-                {'safe_distance': 0.5}
+                {'safe_distance': 0.5,
+                'linear_speed': 0.2,
+                'angular_speed': 0.5}
             ]
         )
     ])

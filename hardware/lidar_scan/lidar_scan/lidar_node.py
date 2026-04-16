@@ -8,7 +8,7 @@ class LidarHardware(Node):
         self.publisher_ = self.create_publisher(LaserScan, '/scan', 10)
         
         self.timer = self.create_timer(0.1, self.timer_callback)
-        self.get_logger().info("Hardware Layer: LiDAR Sensor Online.")
+        self.get_logger().info("UGV IS ON, LIDAR IS SENDING DATA!!!!!!!")
 
     def timer_callback(self):
         msg = LaserScan()
