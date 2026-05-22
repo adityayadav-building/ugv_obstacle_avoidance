@@ -16,7 +16,7 @@ A complete ROS 2 and Gazebo simulation pipeline for a custom differential-drive 
 ### 1. Physical Robot Modeling (`robot.xacro` & `robot.gazebo`)
 * Modeled a custom two-wheel differential drive chassis with a stabilizing caster wheel.
 * Calculated and defined accurate mass and inertia matrices for the body , wheels , and caster  to ensure realistic physics simulation.
-* Configured a GPU LiDAR sensor to cast 120 samples horizontally , spanning a full 360-degree field of view ($-\pi$ to $\pi$ radians)with a detection range of 0.15m to 12.0m[cite: 294]. Gaussian noise was added to the sensor feed to simulate real-world hardware inaccuracies.
+* Configured a GPU LiDAR sensor to cast 120 samples horizontally , spanning a full 360-degree field of view ($-\pi$ to $\pi$ radians)with a detection range of 0.15m to 12.0m. Gaussian noise was added to the sensor feed to simulate real-world hardware inaccuracies.
 
 ### 2. ROS-Gazebo Bridge (`bridge_parameters.yaml` & `gazebo_model.launch.py`)
 * Engineered a seamless integration between ROS 2 nodes and the Gazebo simulation using `ros_gz_bridge`.
